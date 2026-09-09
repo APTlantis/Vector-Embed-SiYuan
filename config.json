@@ -1,0 +1,11 @@
+{
+  "workspace": "E:\\.siyuan",
+  "database": "index/catalog.sqlite3",
+  "ollama_url": "http://127.0.0.1:11434",
+  "embedding_model": "qwen3-embedding:8b",
+  "query_options": {"num_gpu": 0},
+  "chunk_chars": 2800,
+  "overlap_chars": 240,
+  "max_file_bytes": 8388608,
+  "batch_size": 8
+}

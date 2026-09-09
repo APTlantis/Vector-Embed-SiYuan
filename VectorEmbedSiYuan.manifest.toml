@@ -1,0 +1,26 @@
+[project]
+name = "VectorEmbedSiYuan"
+version = "0.1.0"
+status = "local-utility"
+description = "Incremental external SiYuan embeddings and read-only MCP retrieval"
+source_workspace = "E:\\.siyuan"
+canonical_reference = "D:\\.city_hall"
+
+[runtime]
+language = "Python"
+dependencies = ["numpy", "pypdf"]
+embedding_model = "qwen3-embedding:8b"
+chat_model = "qwen3-siyuan:8b"
+chat_base_model = "qwen3:8b"
+chat_context_tokens = 32768
+ollama = "http://127.0.0.1:11434"
+siyuan_verified_version = "3.8.3"
+
+[boundaries]
+indexer_source_access = "read-only"
+integration = "stdio MCP via SiYuan settings API"
+automatic_refresh = false
+native_vector_index = false
+pdf_text_extraction = true
+ocr_transcription_archive_extraction = false
+authority = "Imported snapshots are not current canonical authority"

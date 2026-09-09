@@ -1,0 +1,6 @@
+index/
+reports/
+.research/
+__pycache__/
+*.log
+/.idea/
